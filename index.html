@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Meu Amor</title>
+    <style>
+        body {
+            background-color: #FADCD9;
+            font-family: 'Arial', sans-serif;
+            color: #F28C8C;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #C62828;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #F28C8C;
+        }
+
+        .contador {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .fotos {
+            margin-top: 30px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Te Vivo.🤍</h1>
+    <p>Estamos juntos há:</p>
+    <div class="contador" id="contador"></div>
+
+    <p>E, sinceramente, não consigo imaginar a minha vida sem ti ao meu lado. A nossa conexão é de outro mundo e o que sinto por ti vem da alma. Tu trouxe uma nova cor e profundidade ao meu mundo, uma nova perspetiva e uma nova beleza à minha história.</p> <p> Tu é a fonte de força e de amor que faz com que eu me sinta animada e pronta pra enfrentar qualquer desafio ao teu lado. Eu sou imensamente grata por te ter na minha vida, pelo teu carinho, paciência e apoio, especialmente nos meus momentos difíceis. Prometo, com todo o carinho e sinceridade, que um dia serei a tua esposa.</p>
+
+<p>“Você é a razão pela qual eu acordo todos os dias e quero lutar por cada momento que temos juntos.” — Stella (A cinco passos de você).🤍</p>
+
+    <div class="fotos">
+        <!-- Adicione o link das fotos abaixo -->
+        <img src="vic.jpg" alt="Foto 1">
+        <iframe width="560" height="315" src="https://youtu.be/Smvkobsjz4E?si=AMPN2qbjlW1HOeSa" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+
+    <script>
+        // Defina a data de início do namoro
+        var dataInicio = new Date("2023-10-22T00:00:20");
+
+        function atualizarContador() {
+            var agora = new Date();
+            var tempoJuntos = agora - dataInicio;
+            
+            var dias = Math.floor(tempoJuntos / (1000 * 60 * 60 * 24));
+            var horas = Math.floor((tempoJuntos % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutos = Math.floor((tempoJuntos % (1000 * 60 * 60)) / (1000 * 60));
+            var segundos = Math.floor((tempoJuntos % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML = 
+                dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos";
+        }
+
+        setInterval(atualizarContador, 1000);
+    </script>
+</body>
+</html>
